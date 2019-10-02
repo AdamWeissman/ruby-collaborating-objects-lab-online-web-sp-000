@@ -6,7 +6,7 @@ class MP3Importer
     @path = road
   end
 
-  def files
+  def files #path without @ symbol here... it's calling the attr_reader
     @files ||= Dir.glob("#{path}/*.mp3").collect{ |f| f.gsub("#{path}/", "") }
   end
 
