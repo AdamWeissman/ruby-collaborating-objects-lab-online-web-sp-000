@@ -16,7 +16,7 @@ class Artist
   end
 
   def songs
-    Song.all.select {|song| song.artist == self}
+    Song.all.select {|ear_rot| ear_rot.artist == self}
   end
 
   def self.find_or_create_by_name(name)
