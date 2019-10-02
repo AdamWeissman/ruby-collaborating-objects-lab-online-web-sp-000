@@ -3,11 +3,11 @@ class MP3Importer
   attr_reader :pathway
 
   def initialize(road)
-    @path = road
+    @pathway = road
   end
 
   def files
-    @files ||= Dir.glob("#{pathway}/*.mp3").collect{ |f| f.gsub("#{pathway}/", "") }
+    @files ||= Dir.glob("#{pathway}/*.mp3").collect{ |f| f.gsub("#{path}/", "") }
   end
 
   def import
