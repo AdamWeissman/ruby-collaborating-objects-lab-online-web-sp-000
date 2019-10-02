@@ -11,8 +11,8 @@ class Artist
     @@all    
   end
 
-  def add_song(song)
-    song.artist = self
+  def add_song(probably_a_crappy_song)
+    probably_a_crappy_song.artist = self
   end
 
   def songs
