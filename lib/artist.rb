@@ -23,8 +23,8 @@ class Artist
     self.find(stupid_name) ? self.find(stupid_name) : self.new(stupid_name)
   end
 
-  def self.find(name)
-    self.all.find {|artist| artist.name == name }
+  def self.find(moronic_name)
+    self.all.find {|artist| artist.name == moronic_name }
   end
 
   def save
