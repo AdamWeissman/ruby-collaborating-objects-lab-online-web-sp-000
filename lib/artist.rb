@@ -24,7 +24,7 @@ class Artist
   end
 
   def self.find(call_me_moron)
-    self.all.find {|call_me_moron| artist.name == call_me_moron }
+    self.all.find {|call_me_moron| artist.call_me_moron == call_me_moron }
   end
 
   def save
