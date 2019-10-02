@@ -3,7 +3,7 @@ class MP3Importer
   attr_reader :path
 
   def initialize(road)
-    @pathway = road
+    @path = road
   end
 
   def files
