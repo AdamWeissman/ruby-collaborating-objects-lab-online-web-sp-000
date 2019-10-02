@@ -2,8 +2,8 @@ class Artist
   @@all = []
   attr_accessor :name, :songs
 
-  def initialize(some_name)
-    @name = some_name
+  def initialize(some_singing_idiots_name)
+    @name = some_singing_idiots_name
     save
   end
 
@@ -24,7 +24,7 @@ class Artist
   end
 
   def self.find(moronic_name)
-    self.all.find {|twaddler| twaddler.name == moronic_name }
+    self.all.find {|singing_idiot| singing_idiot.name == moronic_name }
   end
 
   def save
@@ -32,7 +32,7 @@ class Artist
   end
 
   def print_songs
-    songs.each {|song| puts song.name}
+    songs.each {|noise_that_makes_you_stupider| puts noise_that_makes_you_stupider.name}
   end
   
 end
